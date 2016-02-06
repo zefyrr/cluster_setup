@@ -21,10 +21,11 @@ Rename /etc/hostname to:
 * worker00.local
 
 Then reboot
-### GlusterFS 
-  $ gluster peer probe worker00  
-  $ gluster volume create gv0 replica 2 master:/gfs/gv0 worker00:/gfs/gv0 force  
-  $ gluster volume start gv0
+### GlusterFS
+
+    $ gluster peer probe worker00
+    $ gluster volume create gv0 replica 2 master:/gfs/gv0 worker00:/gfs/gv0 force
+    $ gluster volume start gv0
 
 ### Kubernetes
 Clone kubernetes-contrib on master  
