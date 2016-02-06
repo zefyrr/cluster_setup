@@ -6,10 +6,10 @@ This guide is for setting up a kubernetes enabled cluster that is enabled with g
 Start with fedora 23, download from here https://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-netinst-x86_64-23.iso
 Create root & userspace accounts
 
-  $ cd /tmp  
-  $ git clone https://github.com/zefyrr/cluster_setup  
-  $ cd cluster_setup  
-  $ ./base_install.sh
+    $ cd /tmp  
+    $ git clone https://github.com/zefyrr/cluster_setup  
+    $ cd cluster_setup  
+    $ ./base_install.sh
 
 
 ## Node setup
