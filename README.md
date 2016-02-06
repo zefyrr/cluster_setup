@@ -7,6 +7,7 @@ Start with fedora 23, download from here https://download.fedoraproject.org/pub/
 Create root & userspace accounts
 
     $ cd /tmp  
+    $ dnf install -y git  
     $ git clone https://github.com/zefyrr/cluster_setup  
     $ cd cluster_setup  
     $ ./base_install.sh
