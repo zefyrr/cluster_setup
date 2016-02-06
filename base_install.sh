@@ -22,7 +22,7 @@ rm -rf ~/.ssh
 ssh-keygen -t rsa -b 2048 -N '' -f /root/.ssh/id_rsa
 cd ~/.ssh
 cp id_rsa.pub authorized_keys
-### Setup environment for developing 
+### Setup environment for editing 
 mkdir -p ~/projects/
 cd ~/projects
 git clone https://github.com/zefyrr/environment_mojo_linux
