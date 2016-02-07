@@ -4,7 +4,7 @@ set -x #echo on
 ## Install packages
 dnf upgrade -y
 dnf install -y git python-netaddr avahi vim docker glusterfs-server ntpdate ansible tmux
-dnf remove -y cockpit
+#dnf remove -y cockpit
 
 ## Configure
 ### Ntp
