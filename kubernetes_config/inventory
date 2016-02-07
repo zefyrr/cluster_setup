@@ -1,0 +1,10 @@
+[masters]
+master.home
+
+[etcd]
+master.home
+
+[nodes]
+master.home
+worker00.home
+
