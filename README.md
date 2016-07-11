@@ -3,7 +3,7 @@ This guide is for setting up a kubernetes enabled cluster that is enabled with g
 
 ## Base OS
 
-Start with fedora 23, download from here https://download.fedoraproject.org/pub/fedora/linux/releases/23/Server/x86_64/iso/Fedora-Server-netinst-x86_64-23.iso
+Start with fedora 24, download from here https://www.mirrorservice.org/sites/dl.fedoraproject.org/pub/fedora/linux/releases/24/Server/x86_64/iso/Fedora-Server-netinst-x86_64-24-1.2.iso
 Create root & userspace accounts
 
     $ cd /tmp
