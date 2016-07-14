@@ -20,9 +20,7 @@ Rename /etc/hostname to:
 * master.local
 * worker00.local
 
-Reboot
-
-Check if master and worker are reachable from each other:
+Reboot and check if master and worker are reachable from each other:
 * from master
 
     $ ping worker00
