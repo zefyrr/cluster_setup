@@ -20,7 +20,8 @@ Rename /etc/hostname to:
 * master.local
 * worker00.local
 
-Then reboot
+Reboot
+
 Check if master and worker are reachable from each other:
 * from master
 
