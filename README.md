@@ -22,11 +22,13 @@ Rename /etc/hostname to:
 
 Reboot and check if master and worker are reachable from each other:
 * from master
-
+```
     $ ping worker00
+```
 * from worker00
-
+```
     $ ping master
+```
 
 ### GlusterFS
 
