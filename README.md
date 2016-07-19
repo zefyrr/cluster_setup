@@ -1,4 +1,4 @@
-# Cluster Setup
+#Cluster Setup
 This guide is for setting up a kubernetes enabled cluster that is enabled with glusterfs and an installation of gogs
 
 ## Base OS
@@ -20,7 +20,16 @@ Rename /etc/hostname to:
 * master.local
 * worker00.local
 
-Then reboot
+Reboot and check if master and worker are reachable from each other:
+* from master
+```
+    $ ping worker00
+```
+* from worker00
+```
+    $ ping master
+```
+
 ### GlusterFS
 
     $ gluster peer probe worker00
