@@ -1,5 +1,5 @@
 #Cluster Setup
-This guide is for setting up a kubernetes enabled cluster that is enabled with glusterfs and an installation of gogs
+This guide is for setting up a kubernetes enabled cluster that is enabled with glusterfs
 
 ## Base OS
 
@@ -47,7 +47,21 @@ Follow guide here - http://kubernetes.io/v1.1/docs/getting-started-guides/fedora
 Edit inventory  
 
     $ vim inventory
+      replace text with:
+        [masters]
+        master
+
+        [etcd]
+        master
+
+        [nodes]
+        master
+        worker00
+
     $ vim ~/contrib/ansible/group_vars/all.yml
+      replace line 17 with:
+        ansible_ssh_user: root
+
     $ cd ~/contrib/ansible/
     $ ./setup.sh
   
