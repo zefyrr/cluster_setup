@@ -16,18 +16,16 @@ Create root & userspace accounts
 ## Node setup
 ### Clone installation
 ### Rename hosts
-Rename /etc/hostname to:
-* master.local
-* worker00.local
+On each node `vim /etc/hostname` and change the hostname entry to `master.local` and `worker00.local` for the master and worker nodes respectively
 
 Reboot and check if master and worker are reachable from each other:
-* from master
+From master
 ```
-    $ ping worker00
+$ ping worker00
 ```
-* from worker00
+From worker00
 ```
-    $ ping master
+$ ping master
 ```
 
 ### GlusterFS
