@@ -19,6 +19,7 @@ Create root & userspace accounts
 On each node `vim /etc/hostname` and change the hostname entry to `master.local` and `worker00.local` for the master and worker nodes respectively
 
 Reboot and check if master and worker are reachable from each other:
+
 From master
 ```
 $ ping worker00
