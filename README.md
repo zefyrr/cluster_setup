@@ -68,7 +68,7 @@ Edit inventory
 
 These instructions can be used to provide a gluster volume to a container
 
-## Create endpoints
+#### Create endpoints
 
 Write a spec file for the endpoints. Use the sample [glusterfs-endpoints.json](https://github.com/shuaib88/cluster_setup/blob/initialSetup/gluster_vol_examples/glusterfs-endpoints.json) as a guide
 
@@ -104,7 +104,7 @@ Create a service for these endpoints so that they will be persistent. See [glust
 $ kubectl create -f glusterfs-service.json
 ```
 
-## Create a POD
+#### Create a POD
 
 The following volume spec in (glusterfs-pod.json) illustrates a sample configuration.
 ```
