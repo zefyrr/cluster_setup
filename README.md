@@ -66,13 +66,13 @@ Edit inventory
   
 ### Attach Gluster Volume to Container
 
-These instructions can be used to provide a gluster volume to a container
+These instructions can be used to provide a gluster volume to a container. Instruction attribution [here](https://github.com/kubernetes/kubernetes/tree/master/examples/volumes/glusterfs)
 
 #### Create endpoints
 
 Write a spec file for the endpoints. Use the sample [glusterfs-endpoints.json](https://github.com/shuaib88/cluster_setup/blob/initialSetup/gluster_vol_examples/glusterfs-endpoints.json) as a guide
 
-Ping each node and obtain the IP address, your spec file should use the IPv4 format to declare each node. For example:
+Ping each node and obtain the IP address. Your spec file should use the IPv4 format to declare each node. For example:
 
 ```
     {
@@ -89,7 +89,7 @@ Ping each node and obtain the IP address, your spec file should use the IPv4 for
     }
 ```
 
-Create the endpoints, 
+Create the endpoints
 ```
 $ kubectl create -f glusterfs-endpoints.json
 ```
@@ -106,7 +106,7 @@ $ kubectl create -f glusterfs-service.json
 
 #### Create a POD
 
-The following volume spec in (glusterfs-pod.json) illustrates a sample configuration.
+The following volume spec in [glusterfs-pod.json](https://github.com/shuaib88/cluster_setup/blob/initialSetup/gluster_vol_examples/glusterfs-pod.json) illustrates a sample configuration.
 ```
   { 
       "name": "glusterfsvol",
@@ -118,9 +118,9 @@ The following volume spec in (glusterfs-pod.json) illustrates a sample configura
   }
 ```
 The parameters are explained as follows:
--**endpoints** the endpoints name we defined in our gluster-endpoints.json service. The pod will randomly pick one of the endpoints to mount. 
--**path** is the Glusterfs volume name.
--**readOnly** is the boolean which sets the mountpoint as readOnly or readWrite.
+- **endpoints** the endpoints name we defined in our gluster-endpoints.json service. The pod will randomly pick one of the endpoints to mount. 
+- **path** is the Glusterfs volume name.
+- **readOnly** is the boolean which sets the mountpoint as readOnly or readWrite.
 
 Create a pod that has a container using Glusterfs volume
 ```
