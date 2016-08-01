@@ -118,7 +118,7 @@ The following volume spec in [glusterfs-pod.json](https://github.com/shuaib88/cl
   }
 ```
 The parameters are explained as follows:
-- **endpoints** the endpoints name we defined in our gluster-endpoints.json service. The pod will randomly pick one of the endpoints to mount. 
+- **endpoints** the endpoints name we defined in our endpoints service. The pod will randomly pick one of the endpoints to mount. 
 - **path** is the Glusterfs volume name.
 - **readOnly** is the boolean which sets the mountpoint as readOnly or readWrite.
 
